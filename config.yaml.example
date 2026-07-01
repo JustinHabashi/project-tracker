@@ -1,0 +1,15 @@
+# Copy this file to config.yaml and fill in your own values.
+# config.yaml is gitignored because it contains local filesystem paths
+# and a computer name that can reveal personal information.
+
+sheet_id: "<google-sheet-id>"
+computer_name: ""  # optional override, else falls back to socket.gethostname()
+
+# Optional: name of the sheet/tab to write to (defaults to "Sheet1")
+sheet_name: "Sheet1"
+
+projects:
+  - path: "C:/path/to/project-one"
+    description: "Short description of project one"
+  - path: "C:/path/to/project-two"
+    description: "Short description of project two"
