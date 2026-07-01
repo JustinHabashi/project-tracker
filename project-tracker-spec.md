@@ -31,7 +31,7 @@ projects:
    - Run `git -C <path> log -1 --pretty=format:%s|%cI` → split into message + ISO date
    - If not a git repo or no commits, log a warning and skip
 3. Get computer name: `config.computer_name` if set, else `socket.gethostname()`
-4. Auth to Sheets API via OAuth (see below)
+4. Auth to Sheets API via OAjkhuth (see below)
 5. Read existing sheet rows, build a dict keyed by (Project Name, Computer)
 6. For each scanned project: if key exists → update that row's Description/Path/Last Commit Msg/Last Commit Date/Last Synced; if not → append new row
 7. Write changes back with a single batchUpdate call (not one call per row)
